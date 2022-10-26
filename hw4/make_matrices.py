@@ -76,9 +76,7 @@ def main():
     args = parser.parse_args()
     answers, questions = get_answers(args.path_json)
     m_ans = make_matrix(answers)
-    m_ques = make_matrix(questions)
     np.save('answers.npy', m_ans)
-    np.save('questions.npy', m_ques)
 
 
 if __name__ == '__main__':
